@@ -47,8 +47,8 @@ const DEFAULT_SETTINGS = [
 
 // 推送配置
 const PUSH_TOKENS = [
-    'manager' => '5c61b6722ac142a38a05ad9843731c3e',
-    'tech'    => 'fdc279cb4c6c4b43be127f73a4a6984d'
+    'manager' => '密钥1',
+    'tech'    => '密钥2'
 ];
 
 // 默认用户配置

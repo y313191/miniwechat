@@ -337,7 +337,7 @@ $announcementContent = loadAnnouncement();
 
         <div class="footer">
             <div>当前在线人数：<span id="onlineCount"><?= countOnlineUsers() ?></span></div>
-            <div>YiST©｜<a target="_blank" href="http://www.beian.gov.cn/" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://w-flac.org.cn/upload/gongan.png" style="float:left;"/>闽ICP备2021010403号-2</a></div>
+            <div>YiST©｜<a target="_blank" href="http://www.beian.gov.cn/" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://w-flac.org.cn/upload/gongan.png" style="float:left;"/>备案号填写处</a></div>
         </div>
         
         <?php if(empty($_SESSION['username'])): ?>
