@@ -1,0 +1,49 @@
+/* 回调消息样式 */
+.callback-msg {
+    /* border-left: 3px solid #ffc107; */ /* 移除左侧边框 */
+    background-color: #e9ecef; /* 更改背景颜色，使其与普通消息区分 */
+    border: 1px solid #ced4da; /* 添加边框 */
+}
+
+.callback-msg.my-msg {
+    background-color: #cce5ff; /* 如果是当前用户发送的回调消息，使用不同的背景色 */
+    border-color: #b8daff;
+}
+
+.callback-badge {
+    display: inline-block;
+    padding: 1px 5px; /* 调整内边距 */
+    margin-left: 6px; /* 调整左侧外边距 */
+    font-size: 10px; /* 减小字体大小 */
+    color: #dc3545; /* 更改字体颜色为红色 */
+    background-color: transparent; /* 背景设为透明 */
+    /* border-radius: 4px; */ /* 如果不需要圆角可以移除 */
+    border: 1px dashed #dc3545; /* 添加红色虚线边框 */
+    font-weight: normal; /* 字体不加粗 */
+    border-radius: 3px; /* 添加一点圆角 */
+    vertical-align: middle; /* 尝试垂直对齐 */
+}
+
+/* 调整消息信息部分的布局 */
+.msg-info {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直居中对齐 */
+    flex-wrap: wrap; /* 允许换行，避免内容过多时溢出 */
+}
+
+.msg-info .sender,
+.msg-info .time,
+.msg-info .ephemeral-icon,
+.msg-info .callback-badge {
+    margin-right: 5px; /* 调整各项之间的间距 */
+}
+
+.msg-info .time {
+    font-size: 10px; /* 减小字体大小 */
+    color: var(--time-color); /* 使用时间颜色变量 */
+}
+
+/* 我方消息气泡时间颜色 */
+.my-msg .time {
+    color: #1a1a1a; /* 深黑色 */
+} 

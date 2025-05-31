@@ -1,0 +1,25 @@
+# 保护数据目录
+<FilesMatch "^(MSG\.txt|online\.dat)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# 禁止直接访问PHP包含文件
+<FilesMatch "^(config|includes)/">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# 错误处理
+php_flag display_errors Off
+php_value error_reporting E_ALL
+
+# 安全性设置
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# 使用默认的索引文件
+DirectoryIndex index.php 
